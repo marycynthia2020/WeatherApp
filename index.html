@@ -7,12 +7,31 @@
     <title>Weather Forecasts</title>
 </head>
 <body class="w-screen h-screen grid place-items-center">
-   <div class=" background p-6 w-full h-full  md:w-1/2 lg:w-[40%] 2xl:w-[25%] md:h-[80vh] rounded-md flex flex-col space-between" >
-    <div class="flex justify-between items-center">
+   <div class=" background p-4 sm:p-8 sm:py-10 w-full h-full  md:w-1/2 lg:w-[40%] 2xl:w-[25%] md:h-[70vh] rounded-md flex flex-col justify-between" >
+    <div class="flex justify-between">
         <input type="text" name="" id="searchInput" class="py-4 w-4/5 rounded-xl bg-white outline-none ">
         <button id="search-button" class="p-4 rounded-full bg-white"><img src="/images/search-svgrepo-com.svg" alt="search input" width="25" height="25"></button>
-        
     </div>
+    <div class="mx-auto">
+       <img src="/images/sun.png" alt="" width="150" height="50">
+    </div>
+    <div class="text-5xl text-white font-semibold flex flex-col justify-between gap-4 items-center ">
+        <h1>7°C</h1>
+        <h2 class="font-medium">Nigeria</h2>
+    </div>
+    <div class="flex justify-between items-center text-white font-bold">
+
+        <div class="text-3xl flex justify-between gap-4 items-center ">
+            <img src="images/humidity-svgrepo-com.svg" alt="" width="50">
+            <p>90%  <br><span class="text-2xl font-medium">Humidity</span></p>
+        </div>
+        <div class="text-3xl flex justify-between gap-4 items-center">
+            <img src="images/humidity-svgrepo-com.svg" alt="" width="50">
+            <p>50km/hr<br><span class="text-2xl font-medium">Windspeed</span></p>
+        </div>
+
+    </div>
+    
    
    </div>
 </body>
