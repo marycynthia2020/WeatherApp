@@ -27,9 +27,12 @@ if (navigator.geolocation) {
     lat = position.coords.latitude;
     lon = position.coords.longitude;
     getWeather()
-  });
+  }, error =>{
+    alert('Error getting geolocation' + error.message)
+  }
+);
 } else{
-        alert(error)
+    alert("geolation is not supported by the browser")
 }
 
 async function getWeather() {
